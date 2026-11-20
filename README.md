@@ -1,14 +1,20 @@
-# Perú Explora IA — Shopify theme
+# Perú Explora IA
 
-Tema Shopify Online Store 2.0 para una agencia de turismo dentro del Perú.
+Tienda Shopify Online Store 2.0 para descubrir destinos y experiencias dentro del Perú.
 
-- Diseño editorial premium: verde bosque, marfil y acentos dorados.
-- Fotografías reales de destinos peruanos.
-- Catálogo inspiracional y planificador turístico IA.
-- Responsive y preparado para personalizar desde el editor de Shopify.
+## Diseño
+- Dirección editorial premium: verde bosque, marfil y dorado.
+- Portada cinematográfica con fotografía real de Machu Picchu.
+- Secciones de destinos, tipos de experiencia, proceso de planificación, asistente IA y preguntas frecuentes.
+- Diseño mobile-first, accesibilidad básica, imágenes adaptables y movimiento reducido.
 
-## Conectar
-En Shopify Admin → Tienda online → Temas → Agregar tema → Conectar desde GitHub. Selecciona este repositorio y `main`. Previsualiza antes de publicar.
+## Shopify
+Conecta la rama main de este repositorio desde Tienda online → Temas → Agregar tema → Conectar desde GitHub. Previsualiza el tema antes de publicarlo.
 
-## IA
-El formulario del planificador requiere un backend HTTPS seguro. No expongas una clave de OpenAI en Liquid, JavaScript del navegador ni archivos públicos. Las recomendaciones y estimaciones deben verificarse con proveedores y fuentes oficiales.
+## Backend IA
+El backend se encuentra en /backend y se despliega como un proyecto Vercel independiente con Root Directory = backend. Requiere OPENAI_API_KEY configurada como variable secreta en Vercel. El formulario Shopify recibe únicamente la URL pública del endpoint HTTPS.
+
+Nunca incluyas claves de OpenAI en este repositorio, Liquid, configuración del tema ni JavaScript del navegador.
+
+## Alcance actual
+La web ofrece información e itinerarios sugeridos; no confirma reservas, tarifas ni disponibilidad. Verifica esos datos con fuentes oficiales y operadores.
