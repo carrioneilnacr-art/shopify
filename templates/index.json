@@ -128,7 +128,9 @@
     },
     "planner": {
       "type": "ai-planner",
-      "settings": {}
+      "settings": {
+        "endpoint": "https://peru-explora-ai-api.vercel.app/api/plan-trip"
+      }
     },
     "why": {
       "type": "why-peru",
