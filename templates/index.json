@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "hero": {
+      "type": "main-hero",
+      "settings": {}
+    },
+    "destinations": {
+      "type": "featured-destinations",
+      "blocks": {
+        "cusco": {
+          "type": "destination",
+          "settings": {
+            "region": "Cusco · Andes",
+            "name": "Machu Picchu",
+            "description": "Historia viva, arquitectura inca y paisajes que parecen detener el tiempo.",
+            "fallback_image": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1000&q=85"
+          }
+        },
+        "ica": {
+          "type": "destination",
+          "settings": {
+            "region": "Ica · Costa sur",
+            "name": "Oasis de Huacachina",
+            "description": "Dunas doradas, aventura en el desierto y atardeceres junto a la laguna.",
+            "fallback_image": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=85"
+          }
+        },
+        "rainbow": {
+          "type": "destination",
+          "settings": {
+            "region": "Cusco · Vilcanota",
+            "name": "Montaña de 7 colores",
+            "description": "Una ruta de altura entre paisajes minerales y vistas inolvidables.",
+            "fallback_image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+          }
+        }
+      },
+      "block_order": [
+        "cusco",
+        "ica",
+        "rainbow"
+      ],
+      "settings": {}
+    },
+    "planner": {
+      "type": "ai-planner",
+      "settings": {}
+    },
+    "story": {
+      "type": "rich-text",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "destinations",
+    "planner",
+    "story"
+  ]
+}

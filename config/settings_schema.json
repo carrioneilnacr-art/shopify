@@ -1,0 +1,63 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Perú Explora IA",
+    "theme_author": "Perú Explora IA",
+    "theme_version": "1.0.0"
+  },
+  {
+    "name": "Colores de marca",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_forest",
+        "label": "Verde bosque",
+        "default": "#123d30"
+      },
+      {
+        "type": "color",
+        "id": "color_emerald",
+        "label": "Verde esmeralda",
+        "default": "#1c5945"
+      },
+      {
+        "type": "color",
+        "id": "color_cream",
+        "label": "Marfil",
+        "default": "#faf9f5"
+      },
+      {
+        "type": "color",
+        "id": "color_gold",
+        "label": "Dorado suave",
+        "default": "#b79a62"
+      },
+      {
+        "type": "color",
+        "id": "color_ink",
+        "label": "Texto",
+        "default": "#1d2b25"
+      }
+    ]
+  },
+  {
+    "name": "Contacto",
+    "settings": [
+      {
+        "type": "text",
+        "id": "contact_email",
+        "label": "Correo de contacto"
+      },
+      {
+        "type": "url",
+        "id": "instagram_url",
+        "label": "Instagram"
+      },
+      {
+        "type": "url",
+        "id": "facebook_url",
+        "label": "Facebook"
+      }
+    ]
+  }
+]
