@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/plan-trip.js": {
+      "maxDuration": 30
+    }
+  }
+}

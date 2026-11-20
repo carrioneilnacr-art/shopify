@@ -1,2 +1,15 @@
 <!doctype html>
-<html lang="{{ request.locale.iso_code }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123d30"><link rel="canonical" href="{{ canonical_url }}"><title>{% if page_title %}{{ page_title | escape }} · {% endif %}{{ shop.name | default: 'Perú Explora IA' }}</title>{% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}{{ content_for_header }}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">{{ 'base.css' | asset_url | stylesheet_tag }}</head><body><a class="skip-link" href="#MainContent">Saltar al contenido</a>{% sections 'header-group' %}<main id="MainContent" role="main">{{ content_for_layout }}</main>{% sections 'footer-group' %}</body></html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123d30">
+<link rel="canonical" href="{{ canonical_url }}">
+<title>{% if page_title %}{{ page_title | escape }} · {% endif %}{{ shop.name | default: 'Perú Explora IA' }}</title>
+{% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+<meta property="og:site_name" content="Perú Explora IA"><meta property="og:title" content="{{ page_title | default: shop.name | escape }}"><meta property="og:type" content="website">
+{% if page_description %}<meta property="og:description" content="{{ page_description | escape }}">{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+{{ 'base.css' | asset_url | stylesheet_tag }}
+<style>:root{--forest:{{ settings.color_forest | default: '#123d30' }};--emerald:{{ settings.color_emerald | default: '#1c5945' }};--cream:{{ settings.color_cream | default: '#faf9f5' }};--gold:{{ settings.color_gold | default: '#b79a62' }};--ink:{{ settings.color_ink | default: '#1d2b25' }};}</style>
+{{ content_for_header }}
+</head><body><a class="skip-link" href="#MainContent">Saltar al contenido</a>{% sections 'header-group' %}<main id="MainContent" role="main">{{ content_for_layout }}</main>{% sections 'footer-group' %}</body></html>
